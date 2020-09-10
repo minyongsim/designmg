@@ -11,7 +11,7 @@
 color: #fff; text-shadow: 1px 1px 2px #333;}
 
 ::placeholder { color:navy }
-.join_box { padding:100px 0 100px }
+.join_box { padding:50px 0 100px }
 .join_box h2 { text-align:center; font-size:30px;
     padding-bottom:30px }
 
