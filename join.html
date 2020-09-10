@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/join.css">
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="header">
+        <div class="topmenu cf">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+
+            <div class="menubox">
+                <ul class="depth1 cf">
+                    <li><a href="#">회사소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="map.html">찾아오시는길</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li><a href="#">사업소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">사업안내</a></li>
+                            <li><a href="#">사업분야</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">제품소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">제품소개1</a></li>
+                            <li><a href="#">제품소개2</a></li>
+                            <li><a href="#">제품소개3</a></li>
+                            <li><a href="#">제품소개4</a></li>
+                            <li><a href="#">제품소개5</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="#">온라인문의</a>
+                        <ul class="depth2">
+                            <li><a href="#">Q&amp;A</a></li>
+                            <li><a href="">1:1문의</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하는질문</a></li>
+                            <li><a href="#">갤러리</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                            <li><a href="#">대리점안내</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="decobox"></div>
+
+            <div class="login_box cf">
+                <a href="index.html">HOME</a>
+                <a href="login.html">Login</a>
+                <a href="join.html">Join</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="section">
+        <div class="extra_service">
+            <h1>부가서비스</h1>
+        </div>
+        <div class="join_box row">
+            <h2>회원가입</h2>
+            <form action="#" method="post" class="join_form">
+                <fieldset>
+                    <legend>회원가입양식</legend>
+                    <p class="info_pilsoo pilsoo_item">필수입력</p>
+                    <ul class="info_list">
+                        <li>
+                            <label for="name_lbl" class="tit_lbl pilsoo_item">아이디</label>
+                            <div class="info_content">
+                                <input required class="w320" type="text" id="name_lbl" placeholder="아이디를 입력해 주세요."> 
+                                <span>(아이디는 최소 6자리 이상입니다)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="password_lbl" class="tit_lbl pilsoo_item">비밀번호</label>
+                            <div class="info_content">
+                                <input class="w320" type="password" id="password_lbl" placeholder="비밀번호를 입력해 주세요.">
+                                <span>(비밀번호는 최소 6자리 이상입니다.)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="passwordok_lbl" class="tit_lbl pilsoo_item">비밀번호 확인</label>
+                            <div class="info_content">
+                                <input class="w320" type="password" id="passwordok_lbl" placeholder="비밀번호를 다시 한번 입력해 주세요.">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="phone_lbl" class="tit_lbl pilsoo_item">연락처</label>
+                            <div class="info_content">
+                                <input class="w320" type="text" id="phone_lbl" placeholder='휴대폰 번호 "-"없이 숫자만 입력해 주세요'>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="email_lbl" class="tit_lbl pilsoo_item">이메일</label>
+                            <div class="info_content">
+                                <input class="w160" type="text" id="email_lbl">
+                                <span>@</span>
+                                <input class="w160" type="text" id="domain" disabled>
+                                <select id="email_choice" class="w160">
+                                    <option value="nochoice">-이메일선택-</option>
+                                    <option value="naver.com">네이버</option>
+                                    <option value="daum.net">다음</option>
+                                    <option value="self">직접입력</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="addr_lbl" class="tit_lbl">주소</label>
+                            <div class="info_content">
+                                <input class="w160 mb3" type="text" id="addr_lbl"> <button type="button">우편번호</button><br>
+                                <input class="w70p mb3" type="text" id="addr1"> <span>(도로명주소)</span><br>
+                                <input class="w70p mb3" type="text" id="addr2"> <span>(지번주소)</span><br>
+                                <input class="w70p" type="text" id="addr3"> <span>(나머지주소)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="birthday" class="tit_lbl">생년월일</label>
+                            <div class="info_content">
+                                <input class="w160" type="text" id="birthday" placeholder="2000"> <span>년</span>
+                                <select id="birthday" class="w160">
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="11">10</option>
+                                    <option value="12">12</option>
+                                   
+                                </select> <span>월</span>
+                                <select  id="w160" class="w160">
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                   
+                                </select> <span>일</span>
+
+
+                            </div>
+                        </li>
+                        <li>
+                            <label class="tit_lbl">성별</label>
+                            <div class="info_content gender_area">
+                                <input type="radio" name="gender" id="male" vlaue="남">
+                                <label for="male">남</label>
+                                <input type="radio" name="gender" id="female" value="여">
+                                <label for="female">여</label>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                    <div class="btn">
+                        <input type="submit" value="전송">
+                        <input type="reset" value="취소">
+                    </div>
+                </fieldset>
+             
+            </form>
+        </div>
+
+        
+
+    </div>
+
+    <div id="footer">
+        <div class="privacy">
+            <div class="privacy_dox cf">
+                <a href="#">개인정보취급방침</a>
+                <a href="#">이메일무단수집거부</a>
+                <a href="#">회사소개</a>
+                <a href="#">오시는길</a>
+            </div>
+        </div>
+        <div class="company_info cf">
+            <div class="company_box cf row">
+                <div class="company">
+                    <h2>COMPANY</h2>
+                    <p>
+                        미광디자인 <br>
+                        서울시 중구 태평로 1가 우리빌딩주식회사 <br>
+                        대표 홍길동<br>
+                        사업자번호 786-56-00061
+                    </p>
+                </div>
+                <div class="customer">
+                    <h2>CUSTOMER</h2>
+                       <p>
+                        정성껏 상담해 드리겠습니다.<br>
+                         Tel : 010-3217-3646<br>
+                         Fax : 010-3217-3646<br>
+                         Mail : phlink@nate.com<br>
+                       </p>
+                    
+                      
+                   
+                </div>
+                <div class="followus">
+                    <h2> FOLLOW US</h2>
+                    <p>
+                        <a href="#"><img src="images/bt_blog.png" alt=""></a>
+                        <a href="#"><img src="images/bt_facebook.png" alt=""></a>
+                        <a href="#"><img src="images/bt_instagram.png" alt=""></a>
+                        <a href="#"><img src="images/bt_youtube.png" alt=""></a>
+                    </p>
+                </div>
+
+            
+            </div>
+             <div class="copy row">
+                <p>Copyright © 미광디자인. All rights reserved. Desig by MG</p>
+            </div> 
+
+
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
