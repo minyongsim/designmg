@@ -3,7 +3,7 @@
 
 #section {padding-top: 10px;}
 #section .slide_box { position: relative;}
-#section .slide_box .slide_out{width: 80%;}
+#section .slide_box .slide_outer{width: 80%;}
 #section .slide_box .slide_inner .slide
 {background-size: cover; background-repeat:no-repeat;  height: 700px; position: relative; }
 
@@ -94,7 +94,7 @@
 
 /* 사이드 박스*/
 #section .slide_box .slide_side
-{width: 20%; display: block; position: absolute; top: 0; right: 0;}
+{width: 20%; display: block; position: absolute; top:0; right: 0;}
 #section .slide_box .slide_side .side_link {height: 700px;}
 #section .slide_box .slide_side .side_link li
 {background-size: cover; background-repeat:no-repeat; height:25%;}
