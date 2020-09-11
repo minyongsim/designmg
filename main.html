@@ -2,20 +2,20 @@
     <div id="section">
         <div class="slide_box">
             <div class="slide_outer">
-                <div class="slide">
-                    <div class="slide_inner">
+                <div class="slide_inner">
+                    <div class="slide slide1">
                         <div class="text">
                             <h2>트렌드를 선도하는 기업</h2>
                             <p>Stay hungry, Stay foolish</p>
                         </div>
                     </div>
-                    <div class="slide_inner">
+                    <div class="slide slide2">
                         <div class="text">
                             <h2>최고로 가는 최선의 기업</h2>
                             <p>Products for your business</p>
                         </div>
                     </div>
-                    <div class="slide_inner">
+                    <div class="slide slide3">
                         <div class="text">
                             <h2>BEST OF YOUR PARTNER</h2>
                             <p>성공적인 비즈니스를 실현해드립니다.</p>
@@ -24,11 +24,7 @@
     
                 </div>
     
-                <div class="slide_dotbox">
-                    <a href="#" class="active"><span class="blind">1</span></a>
-                    <a href="#"><span class="blind">2</span></a>
-                    <a href="#"><span class="blind">3</span></a>
-                </div>
+              
             </div>
     
             <div class="slide_side ">
@@ -36,7 +32,7 @@
                     <li><a href="#">회사소개</a></li>
                     <li><a href="#">사업소개</a></li>
                     <li><a href="#">온라인문의</a></li>
-                    <li><a href="map.html">오시는길</a></li>
+                    <li><a href="#">오시는길</a></li>
                 </ul>
             </div>
         </div>
@@ -191,4 +187,47 @@
     
         </div>
     </div>
+    <script>
+        $(function(){
+
+            $('.slide_inner').slick({
+        autoplay:true, // 자동재생
+        dots:true, //동그라미 버튼
+        autoplaySpeed:4500, // 슬라이드 재생 시간
+        slidesToShow:1, //보여질 슬라이드 수(생략가능)
+        slldesToScroll:1, //이동 슬라이드 수(생략가능)
+        pauseOnHover:true, // 마우스오버시 멈춤여부(생략가능)
+        pauseOnDotHover:false, //동그라미 버튼에 호버시 자동실행 멈춤여부
+        pauseOnFocus:true, //동그라미 버튼에 클릭시 자동실행 멈춤여부
+        cssEase:'ease', //속도함수 (생략가능)
+        draggdle:true, //마우스 드래그시 슬라이드 교체가능 (생략가능)
+        fade:false, //슬라이드 수평으로 이동하지 않고 제자리에서 사라지고 나타남
+        arrows:true, // 좌우 화살표 사용여부
+        prevArrow:'<button class="marrow prevArrow"><i class="fas fa-angle-left"></i></button> ',
+        nextArrow:'<button class="marrow nextArrow"><i class="fas fa-angle-right"></i></button>',
+        responsive: [{
+            breakpoint: 801,
+            settings: {
+                arrows: false,
+                fade: true,
+            }
+        }]
+
+    })
+    $('.plpa').toggle( 
+        function(){
+        $(this).find('i').removeClass('fa-pause')
+        .addClass('fa-play')
+        $('.slide-inner').slick('slickPause')
+    },
+    function(){
+        $(this).find('i').removeClass('fa-play')
+        .addClass('fa-pause')
+        $('.slide-inner').slick('slickPlay')
+    })
+    
+
+
+        })(jQuery)
+    </script>
 </div>

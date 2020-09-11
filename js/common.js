@@ -1,7 +1,7 @@
 (function(){
 
    
-    $('.topmenu').hover(
+    $('.depth1').hover(
         function(){
             $(this).find('.depth2')
             .stop().slideDown(700)

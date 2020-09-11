@@ -3,10 +3,10 @@
 @import "common.css";
 
 
-#section .extra_service 
+#join_section .extra_service 
 {background-size: cover; background-repeat:no-repeat; height: 260px; text-align: center; padding: 100px 0;}
-#section .extra_service {background-image: url(../images/sub_img6.jpg);}
-#section .extra_service h1 
+#join_sectiot .extra_service {background-image: url(../images/sub_img6.jpg);}
+#join_sectiot .extra_service h1 
 { font-size: 50px;
 color: #fff; text-shadow: 1px 1px 2px #333;}
 
