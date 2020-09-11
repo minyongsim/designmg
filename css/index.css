@@ -1,8 +1,7 @@
 
 /* 슬라이드 */
-body{background: #27a4dd;}
 #section {padding-top: 10px;}
-#section .slide_box { position: relative;height: 700px;}
+#section .slide_box { position: relative; width: 100%;}
 #section .slide_box .slide-outer{width: 80%;}
 #section .slide_box .slide_inner .slide
 {background-size: cover; background-repeat:no-repeat;  height: 700px; position: relative; }
@@ -34,7 +33,7 @@ body{background: #27a4dd;}
     opacity: 0;
 }
 
-.slide-outer .slide.slide.slick-active .text {
+.slide-outer .slide.slick-active .text {
     opacity: 1;
 }
 
