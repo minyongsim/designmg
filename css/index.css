@@ -3,9 +3,9 @@
 
 #section {padding-top: 10px;}
 #section .slide_box { position: relative;}
-#section .slide_box .slide_inner {width:80%; height: 700px;  }
+#section .slide_box .slide_out{width: 80%;}
 #section .slide_box .slide_inner .slide
-{background-size: cover; background-repeat:no-repeat; height: 700px; position: relative; }
+{background-size: cover; background-repeat:no-repeat;  height: 700px; position: relative; }
 
 #section .slide_inner:nth-child(1) .slide1 {background-image: url(../images/slide1.jpg);}
 #section .slide_inner:nth-child(2) .slide2 {background-image: url(../images/slide2.jpg);}
