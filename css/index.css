@@ -151,3 +151,5 @@ font-size: 17px; font-weight: bold;}
 #section .portfolio .photo_box li img{ width: 25%; height: 25%; border-radius: 10%; border: 1px solid #fff; float: left;
 padding: 10px; opacity: 0.5;}
 #section .portfolio .photo_box li:hover img {opacity: 1;}
+
+/*/
