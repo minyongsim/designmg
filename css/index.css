@@ -70,6 +70,17 @@
     width: 40px;
     border-radius: 50px;
 }
+/*동그라미 재생버튼*/
+.slide-outer .plpa {
+    font-size: 15px;
+    color: #fff;
+    background: none;
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    margin-left: 55px;
+}
+
 
 
 
@@ -152,4 +163,3 @@ font-size: 17px; font-weight: bold;}
 padding: 10px; opacity: 0.5;}
 #section .portfolio .photo_box li:hover img {opacity: 1;}
 
-/*/
