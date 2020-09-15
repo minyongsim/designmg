@@ -190,6 +190,7 @@
     </div>
     <script>
         (function($){
+
             $('.slide_inner').slick({
         autoplay:true, // 자동재생
         dots:true, //동그라미 버튼
@@ -224,6 +225,15 @@
         $(this).find('i').removeClass('fa-play')
         .addClass('fa-pause')
         $('.slide-inner').slick('slickPlay')
+    })
+    $(window).scroll(function () {
+        var sct = $(this).scrollTop() 
+        var bizNear = $('.biz_box').offset().top - $(this).height() / 2
+        if (sct >= bizNear) {
+            $('.biz_box').addClass('on')
+        }else {
+            $('.biz_box').removeClass('on')
+        }
     })
 
     

@@ -52,7 +52,28 @@ top: 50%; left: -5px; transform: translateY(-50%);}
 #footer .company_info .company_box .followus h2 {font-size: 20px; padding: 20px;}
 
 #footer .copy {position: absolute ; top: 85%; left:21%;}
- 
+
+.introAni {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:navy;
+    z-index: 999999999999;
+    font-size: 100px;
+    color: gold;
+    
+}
+
+.introAni i {
+    position: absolute;
+    top: 40%;
+
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
 
 
 

@@ -114,6 +114,7 @@ font-size: 17px; font-weight: bold;}
 #section .business_info02 .info_big02 {text-align: center;}
 #section .business_info02 .info_big01 .info_box, 
 #section .business_info02 .info_big02 .info_box {display: inline-block;  padding:2px ;}
+
 #section .business_info02 .info_box02
 {width: 350.95px; height: 170px; background: #fff; border: 1px solid #ccc; position: relative; }
 #section .business_info02 .info_box02 img 
@@ -130,9 +131,9 @@ font-size: 17px; font-weight: bold;}
 #section .biz_box .biz_inner li a:hover {background: red; width: 100%;}
 #section .biz_box .biz_inner li > a:hover img { transform: rotate(1turn);}
 
-#section .biz_box .biz_inner li:first-child {float: left; width:48.8% }
-#section .biz_box .biz_inner li:first-child > a {display: block; transition:all 0.5s; background: no-repeat ; background-size:cover ; height: 502px; line-height:502px }
-#section .biz_box .biz_inner li:first-child > a { background-image: url(../images/m01.jpg); }
+#section .biz_box .biz_inner li:nth-child(1) {float: left; width:48.8% }
+#section .biz_box .biz_inner li:nth-child(1) > a {display: block; transition:all 0.5s; background: no-repeat ; background-size:cover ; height: 502px; line-height:502px }
+#section .biz_box .biz_inner li:nth-child(1) > a { background-image: url(../images/m01.jpg); }
 #section .biz_box .biz_inner li .text { background: #f2f2f2; padding: 20px 10px; }
 
 #section .biz_box .biz_inner li:nth-child(2) {float: right; width: 48.8%;margin-bottom:20px }
@@ -142,6 +143,38 @@ font-size: 17px; font-weight: bold;}
 #section .biz_box .biz_inner li:nth-child(3) {float: right; width: 48.8%; }
 #section .biz_box .biz_inner li:nth-child(3) > a {display: block; transition:all 0.5s; background: no-repeat ; background-size:cover ; height: 200px; line-height:200px }
 #section .biz_box .biz_inner li:nth-child(3) > a {background-image: url(../images/m03.jpg);}
+
+#section .biz_box .biz_inner {overflow: hidden;}
+#section .biz_box .biz_inner li:nth-child(1) {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+#section .biz_box .biz_inner li:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+#section .biz_box .biz_inner li:nth-child(3){
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+#section .biz_box.on .biz_inner li:nth-child(1) {
+    animation: fadeInLeft 1s both;
+}
+#section .biz_box.on .biz_inner li:nth-child(2) {
+    animation:fadeInRight 1s both ;
+}
+#section .biz_box.on .biz_inner li:nth-child(3) {
+    animation:fadeInRight 1s both ;
+}
+
+
+
+
+
+
 
  /* 동영상*/
  #section .video {max-width: 100%; position: relative;}

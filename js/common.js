@@ -1,5 +1,7 @@
 (function(){
-
+    $(window).load(function(){
+        $('.introAni').delay(500).fadeOut(500)
+    })
    
     $('.depth1').hover(
         function(){
