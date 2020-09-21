@@ -1897,7 +1897,7 @@
     transform: translate3d(0, 0, 0);
   }
 }
-@keyframes fadeInLeft {
+@keyframes zoom {
   from {
     opacity: 0;
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -1910,7 +1910,7 @@
     transform: translate3d(0, 0, 0);
   }
 }
-.animate__fadeInLeft {
+.animate__zoom in {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }

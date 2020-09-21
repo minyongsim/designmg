@@ -50,6 +50,8 @@ strong, th { font-weight:normal }
     overflow: hidden;
     text-overflow: ellipsis;
 }
+td {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+caption {display: none;}
 
 /* 본문바로가기 스타일 */
 .skip a { display:block;
