@@ -66,7 +66,7 @@
 }
 
 .slide-outer .slick-dots li.slick-active button {
-    background: gold;
+    background:navy;
     width: 40px;
     border-radius: 50px;
 }
@@ -212,7 +212,7 @@ font-size: 17px; font-weight: bold;}
  #section .video .vbox a:nth-child(2):hover {opacity: 1;}
  #section .video .vouter {position: fixed; top: 0; left: 0;bottom: 0;right: 0; z-index: 9999999999999999; background-color:rgba(0,0,0,0.5); display: none;}
  #section .video .vinner {position: fixed;top: 20%; left: 20%; bottom: 20%; right: 20%; z-index: 9999999999999;}
- #section .video .close {position: absolute;top: 100px;right: 0; padding: 20px; font-size: 50px; color: oldlace;}
+ #section .video .close {position: absolute; top: 110px; right: 355px; padding: 20px; font-size: 50px; color: oldlace;}
  /*포토폴리오*/
  #section .portfolio {width: 100%; padding-top:70PX; padding-bottom:80px ;}
  #section .portfolio h1 {text-align: center; ; font-size: 40px; position: relative; padding-bottom: 10px;}
