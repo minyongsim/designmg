@@ -1,0 +1,30 @@
+<div id="simcontainer">
+    <div class="about_us ">
+     <div class="greetings">
+         <h2>회사소개 </h2>
+     </div>
+     <div class="com_info row">
+         <h2>CEO인사말</h2>
+         <div class="text">
+             <p>데이터 인프라를 기반으로 IOT와 BATTERY를 결합한 BOT 데이터 사업을 기반으로 
+                 KOKIRI OUTSIDE와 KOKIRI INSIDE를 통해 인간의 삶을 보다 풍족하게 하고 편리하며,
+                  모든 분야에서 효율성을 한 단계 높인 기술과 가치 창출을 위해 연구 및 기술 개발을 하고 있습니다.
+                   현대사회에서 소비자의 니즈를 파악하고, 부합하는 제품을 개발·유통하는디자인은 보조배터리,
+                 소형가전에서 공유 서비스,배터리 플랫폼까지 다방면에서 보다 풍요로운 삶을 구현하는데 
+                 일조하여 최고의 기업으로 성장하겠습니다.</p>
+         </div>
+         <h3>대표이사 홍길동</h3>
+     </div>
+
+
+    </div>
+</div>
+<script>
+    $('#simBox').load('abot.html')
+    $('.about_us a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#simcontainer').remove()
+        $('#simBox').load(url)
+    })
+</script>

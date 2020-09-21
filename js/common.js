@@ -31,17 +31,18 @@
         $('#simBox').load(url)
     })
     
-    var scollSize = $(document).height() - $('#header').height() - $(window).height();
+
     var flag = true;
     $(window).on('scroll', function () {
+        var scollSize = $(document).height() - $('#header').height() - $(window).height();
         var sct = $(this).scrollTop();
         var wid = (sct / scollSize) * 100 + '%';
-        $('.scrolling-bar')
-            .css({
-                zIndex: 999999999999,
-                opacity: 1,
-                width: wid
-            });
+        // $('.scrolling-bar')
+        //     .css({
+        //         zIndex: 999999999999,
+        //         opacity: 1,
+        //         width: wid
+        //     });
 
         // 스크롤탑값에 따라 헤더구역 고정시키기
         if (sct >= 100 && flag) {

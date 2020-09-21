@@ -40,25 +40,25 @@
         var biz01 = $('.business_info').offset().top - $(this).height() / 2
         if (sct >= biz01) {
             $('.business_info').addClass('on')
-        } else {
+        } else if (sct===0) {
             $('.business_info').Class('on')
         }
         var biz02 = $('.business_info02').offset().top - $(this).height() / 2
         if (sct >= biz02) {
             $('.business_info02').addClass('on')
-        } else {
+        }else if (sct===0){
             $('.business_info02').removeClass('on')
         }
         var biz03 = $('.biz_box').offset().top - $(this).height() / 2
         if (sct >= biz03) {
             $('.biz_box').addClass('on')
-        } else {
+        }else if (sct===0){
             $('.biz_box').removeClass('on')
         }
         var portfolio = $('.portfolio').offset().top - $(this).height() / 2
         if (sct >= portfolio) {
             $('.portfolio').addClass('on')
-        } else {
+        }else if (sct===0){
             $('.portfolio').removeClass('on')
         }
     })
@@ -70,7 +70,18 @@
         $('#simcontainer').remove()
         $('#simBox').load(url)
     })
+    $('.vbox > a').on('click',function(e){
+        e.preventDefault()
+        var href =$(this).attr('href')
+        $('.vouter').show()
+        $('.vinner iframe').attr('src',href)
 
+     })
+     $('.close').on('click',function(){
+         $('.vouter').hide()
+         $('.vinner iframe').attr('src','')
+     })
+  
 
 
 

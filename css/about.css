@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.about_us{text-align: center;}
+.about_us .greetings{background-size: cover;height: 260px; background-repeat:no-repeat ;
+text-align: center; padding-top: 100px;}
+.about_us .greetings {background-image: url(../images/sub_img6.jpg);}
+.about_us .greetings h2{color: #ffff; font-size: 50px;padding: 20px; text-shadow: 1px 1px 2px #333; }
+.about_us .com_info{padding: 50px; position: relative;}
+.about_us .com_info h2 {text-align: left; font-size: 50px;}
+.about_us .com_info h2:after {content: '';background-color: navy;  
+    height: 5px; width: 250px; position: absolute; top: 120px; left: 50px;}
+.about_us .com_info .text p {padding-top: 50px; text-align: left; font-size: 20px; line-height: 40px;}
+.about_us .com_info h3 {font-size: 20px; text-align: right;}
