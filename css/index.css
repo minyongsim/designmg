@@ -19,7 +19,7 @@
     }
     
 #section .slide_box .slide .text h2
-{font-size: 50px; color: #fff; padding: 20px 30px 25px;}
+{font-size: 40px; color: #fff; padding: 20px 30px 25px; text-shadow: 2px 2px 10px gray; }
 #section .slide_box .slide .text p 
 {font-size: 30px; color: #fff; padding: 20px 30px 25px;}
 
