@@ -69,6 +69,35 @@
             flag = true
         }
     });
+    $(window).scroll(function () {
+        var sct = $(this).scrollTop()
+        var biz01 = $('.business_info').offset().top - $(this).height() / 2
+        if (sct >= biz01) {
+            $('.business_info').addClass('on')
+        } else if (sct===0) {
+            $('.business_info').Class('on')
+        }
+        var biz02 = $('.business_info02').offset().top - $(this).height() / 2
+        if (sct >= biz02) {
+            $('.business_info02').addClass('on')
+        }else if (sct===0){
+            $('.business_info02').removeClass('on')
+        }
+        var biz03 = $('.biz_box').offset().top - $(this).height() / 2
+        if (sct >= biz03) {
+            $('.biz_box').addClass('on')
+        }else if (sct===0){
+            $('.biz_box').removeClass('on')
+        }
+        var portfolio = $('.portfolio').offset().top - $(this).height() / 2
+        if (sct >= portfolio) {
+            $('.portfolio').addClass('on')
+        }else if (sct===0){
+            $('.portfolio').removeClass('on')
+        }
+    })
+    
+
 
 
 
