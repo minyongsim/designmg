@@ -3,16 +3,16 @@
         $('.introAni').delay(500).fadeOut(500)
     })
    
-    $('.depth1').hover(
-        function(){
-            $(this).find('.depth2')
-            .stop().slideDown(700)
-        },
-        function(){
-            $(this).find('.depth2')
-            .stop().slideUp(500)
-        }
-    )
+    // $('.depth1').hover(
+    //     function(){
+    //         $(this).find('.depth2')
+    //         .stop().slideDown(700)
+    //     },
+    //     function(){
+    //         $(this).find('.depth2')
+    //         .stop().slideUp(500)
+    //     }
+    // )
 
 
     $('#simBox').load('main.html')
@@ -30,6 +30,8 @@
         $('#simcontainer').remove()
         $('#simBox').load(url)
     })
+   
+      
     
 
     var flag = true;
@@ -69,6 +71,23 @@
             flag = true
         }
     });
+ 
+    $('.topmenu .open_nav').on('click', function(){
+        $(this).next().stop().slideDown(300)
+        $(this).hide()
+        $(this).nextAll('.close_nav').css({display:'block'})
+      })
+    
+      // 닫기버튼 클릭시 네비박스 사라지기
+      $('.topmenu .close_nav').on('click', function(){
+        $(this).prev().stop().slideUp(300)
+        $(this).hide()
+        $(this).prevAll('.open_nav').css({display:'block'})
+        $('.depth1, .depth2').hide()
+        $('.topmenu .menubox .depth1 > li').removeClass('on')
+      })
+
+
     $(window).scroll(function () {
         var sct = $(this).scrollTop()
         var biz01 = $('.business_info').offset().top - $(this).height() / 2

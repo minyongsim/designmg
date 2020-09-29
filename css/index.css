@@ -3,8 +3,42 @@
 #section {padding-top: 10px;}
 #section .slide_box { position: relative; width: 100%;}
 #section .slide_box .slide-outer{width: 80%;}
-#section .slide_box .slide_inner .slide
-{background-size: cover; background-repeat:no-repeat;  height: 700px; position: relative; }
+#section .slide_box .slide_inner .slide {
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 700px; position: relative; }
+#section .slide_box .slide_inner .slide.slick-active {
+animation: zoomOutmain 4.5s both;
+}
+
+/* Zooming exits */
+@-webkit-keyframes zoomOutmain {
+    from {
+      opacity: 1;
+      -webkit-transform: scale3d(3, 3, 3);
+      transform: scale3d(3, 3, 3);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+   
+  }
+  @keyframes zoomOutmain {
+    from {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+      }
+    
+      to {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+  }
 
 #section .slide_inner .slide1 {background-image: url(../images/slide1.jpg);}
 #section .slide_inner .slide2 {background-image: url(../images/slide2.jpg);}
