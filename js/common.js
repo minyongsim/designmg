@@ -1,11 +1,11 @@
-(function () {
+(function ($) {
+    
     $(window).load(function () {
         $('.introAni').delay(500).fadeOut(500)
     })
 
     init()
     var flag = true
-
     function init() {
         var ww = $(window).width()
         if (ww > 767 && flag) {
@@ -14,8 +14,8 @@
             $('html').addClass('pc').removeClass('mobile')
             flag = false
         } else if (ww < 767 && !flag) {
-            $('.open_nav').show()
-            $('.depth2, .decobox').hide()
+            $('.topmenu .open_nav').show()
+            $('.menubox, .depth2,.decobox').hide()
             $('html').addClass('mobile').removeClass('pc')
             flag = true
         }
@@ -25,16 +25,19 @@
         init()
     })
 
-    // $('.depth1').hover(
-    //     function(){
-    //         $(this).find('.depth2')
-    //         .stop().slideDown(700)
-    //     },
-    //     function(){
-    //         $(this).find('.depth2')
-    //         .stop().slideUp(500)
-    //     }
-    // )
+      // pc 화면 에서 메뉴 호버 했을때 이벤트
+      $('.depth1 > li').hover(
+        function () {
+            if ($('html').hasClass('pc')) {
+                $('.depth2, .decobox').stop().slideDown(300)
+            }
+        },
+        function () {
+            if ($('html').hasClass('pc')) {
+                $('.depth2, .decobox').stop().slideUp(300)
+            }
+        }
+    )
 
 
     $('#simBox').load('main.html')
@@ -52,9 +55,6 @@
         $('#simcontainer').remove()
         $('#simBox').load(url)
     })
-
-
-
 
     var flag = true;
     $(window).on('scroll', function () {
@@ -93,12 +93,14 @@
             flag = true
         }
     });
-
+  
+ // 클릭시 네비 박스 열고 닫기 버튼 나타나기
     $('.topmenu .open_nav').on('click', function () {
         $(this).next().stop().slideDown(300)
         $(this).hide()
         $(this).nextAll('.close_nav').show()
     })
+  
 
     // 닫기버튼 클릭시 네비박스 사라지기
     $('.topmenu .close_nav').on('click', function () {
@@ -108,24 +110,12 @@
         // $('.depth1, .depth2').hide()
         // $('.topmenu .menubox .depth1 > li').removeClass('on')
     })
-    $('.depth1 > li').hover(
-        function () {
-            if ($('html').hasClass('pc')) {
-                $('.depth2, .decobox').stop().slideDown(300)
-            }
-        },
-        function () {
-            if ($('html').hasClass('pc')) {
-                $('.depth2, .decobox').stop().slideUp(300)
-            }
-        }
-    )
+
 
     $('.depth1 > li').on('click', function () {
         if ($('html').hasClass('mobile')) {
             $(this).find('.depth2').stop().slideToggle(300)
             $(this).siblings().find('.depth2').stop().slideUp(300)
-
         }
     })
 

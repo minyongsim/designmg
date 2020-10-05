@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@media screen and (max-width:1166px) {}
+
+
+
+@media screen and (max-width:1024px) {
+    #section .slide_box .slide_inner .slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        position: relative;
+    }
+
+    #section .slide_box .slide .text h2 {
+        font-size: 30px;
+        color: #fff;
+        padding: 20px 30px 25px;
+        text-shadow: 2px 2px 10px gray;
+    }
+
+    #section .slide_box .slide .text p {
+        font-size: 20px;
+        color: #fff;
+        padding: 20px 30px 25px;
+    }
+
+    #section .slide_box .slide_side .side_link {
+        height: 500px;
+    }
+
+    #section .slide_box .slide_side .side_link li>a {
+        line-height: 110px;
+        display: block;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    #section .slide_box .slide_side .side_link li:hover>a {
+        line-height: 110px;
+        display: block;
+        height: 100%;
+        background-color: rgba(0, 144, 255, 0.3);
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    #section .slide_box .slide-outer {
+        width: 100%;
+    }
+
+    #section .slide_box .slide .text h2 {
+        font-size: 20px;
+        color: #fff;
+        padding: 20px 30px 25px;
+        text-shadow: 2px 2px 10px gray;
+    }
+
+    #section .slide_box .slide .text p {
+        font-size: 15px;
+        color: #fff;
+        padding: 20px 30px 25px;
+    }
+
+    #section .slide_box .slide_side {
+        width: 20%;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+
+    /*동그라미 재생버튼*/
+    .slide-outer .plpa {
+        font-size: 15px;
+        color: #fff;
+        background: none;
+        position: absolute;
+        bottom: 20px;
+        left: 40%;
+       display: none;
+    }
+}
