@@ -1,44 +1,60 @@
-(function(){
-    $(window).load(function(){
+(function () {
+    $(window).load(function () {
         $('.introAni').delay(500).fadeOut(500)
     })
-   
-    $('.depth1').hover(
-        function(){
-            $(this).find('.depth2')
-            .stop().slideDown(700)
-        },
-        function(){
-            $(this).find('.depth2')
-            .stop().slideUp(500)
+
+    init()
+    var flag = true
+
+    function init() {
+        var ww = $(window).width()
+        if (ww > 767 && flag) {
+            $('.topmenu .menubox').show()
+            $('.open_nav, .close_nav, .depth2').hide()
+            $('html').addClass('pc').removeClass('mobile')
+            flag = false
+        } else if (ww < 767 && !flag) {
+            $('.open_nav').show()
+            $('.depth2, .decobox').hide()
+            $('html').addClass('mobile').removeClass('pc')
+            flag = true
         }
-    )
+    }
+    init()
+    $(window).resize(function () {
+        init()
+    })
+
+    // $('.depth1').hover(
+    //     function(){
+    //         $(this).find('.depth2')
+    //         .stop().slideDown(700)
+    //     },
+    //     function(){
+    //         $(this).find('.depth2')
+    //         .stop().slideUp(500)
+    //     }
+    // )
 
 
     $('#simBox').load('main.html')
-    $('.login_box > a').on('click',function(e){
+    $('.login_box > a').on('click', function (e) {
         e.preventDefault()
         var url = $(this).attr('href')
         $('#simcontainer').remove()
         $('#simBox').load(url)
     })
-   
+
     $('#simBox').load('main.html')
-    $('.depth1 > li > .depth2 > li > a').on('click',function(e){
+    $('.depth1 > li > .depth2 > li > a').on('click', function (e) {
         e.preventDefault()
         var url = $(this).attr('href')
         $('#simcontainer').remove()
         $('#simBox').load(url)
     })
-    $('#simBox').load('main.html')
-    $('.depth1_m > li > .depth2_m > li > a').on('click',function(e){
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#simcontainer').remove()
-        $('#simBox').load(url)
-    })
-      
-    
+
+
+
 
     var flag = true;
     $(window).on('scroll', function () {
@@ -77,61 +93,77 @@
             flag = true
         }
     });
- 
-    
-    //반응형 햄버거 버튼
-      $(' .topmenu .open_nav').on('click', function () {
+
+    $('.topmenu .open_nav').on('click', function () {
         $(this).next().stop().slideDown(300)
         $(this).hide()
-        $(this).nextAll('.close_nav').css({
-          display:'block'
-        })
-      
-      })
-      $(' .topmenu .close_nav').on('click', function () {
-        $(this).prev().stop().slideUp(300)
-        $('.depth2_m').hide()
+        $(this).nextAll('.close_nav').show()
+    })
+
+    // 닫기버튼 클릭시 네비박스 사라지기
+    $('.topmenu .close_nav').on('click', function () {
+        $(this).prevAll('.menubox').stop().slideUp(300)
         $(this).hide()
-        $(this).prevAll('.open_nav').css({
-          display:'block'
-        })
-      $('.depth2_m').hide()
-      $('.topmenu .depth1_m > li').removeClass('on')
-      
-      })
+        $(this).prevAll('.open_nav').show()
+        // $('.depth1, .depth2').hide()
+        // $('.topmenu .menubox .depth1 > li').removeClass('on')
+    })
+    $('.depth1 > li').hover(
+        function () {
+            if ($('html').hasClass('pc')) {
+                $('.depth2, .decobox').stop().slideDown(300)
+            }
+        },
+        function () {
+            if ($('html').hasClass('pc')) {
+                $('.depth2, .decobox').stop().slideUp(300)
+            }
+        }
+    )
+
+    $('.depth1 > li').on('click', function () {
+        if ($('html').hasClass('mobile')) {
+            $(this).find('.depth2').stop().slideToggle(300)
+            $(this).siblings().find('.depth2').stop().slideUp(300)
+
+        }
+    })
+
+
+
     $(window).scroll(function () {
         var sct = $(this).scrollTop()
         var biz01 = $('.business_info').offset().top - $(this).height() / 2
         if (sct >= biz01) {
             $('.business_info').addClass('on')
-        } else if (sct===0) {
+        } else if (sct === 0) {
             $('.business_info').Class('on')
         }
         var biz02 = $('.business_info02').offset().top - $(this).height() / 2
         if (sct >= biz02) {
             $('.business_info02').addClass('on')
-        }else if (sct===0){
+        } else if (sct === 0) {
             $('.business_info02').removeClass('on')
         }
         var biz03 = $('.biz_box').offset().top - $(this).height() / 2
         if (sct >= biz03) {
             $('.biz_box').addClass('on')
-        }else if (sct===0){
+        } else if (sct === 0) {
             $('.biz_box').removeClass('on')
         }
         var portfolio = $('.portfolio').offset().top - $(this).height() / 2
         if (sct >= portfolio) {
             $('.portfolio').addClass('on')
-        }else if (sct===0){
+        } else if (sct === 0) {
             $('.portfolio').removeClass('on')
         }
     })
-    
 
 
 
 
 
-    
-    
+
+
+
 })(jQuery)

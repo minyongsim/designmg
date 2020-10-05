@@ -1,15 +1,12 @@
 @charset "utf-8";
 @media screen and (max-width:1166px) {
     #header .topmenu .logo {float: left; padding:10px 20px }
-    #header .topmenu .menubox_mb {display: none;}
   
 }
 @media screen and (max-width:1100px) {
-    #header .topmenu .menubox_mb {display: none;}
     #footer .company_info .company_box .company {
         position: absolute;
          top: 0%; left: 20px; }
-         
 }
 
 @media screen and (max-width:1024px) {
@@ -20,59 +17,33 @@
         position: relative; 
         transition: all 0.5s;
     }
-    #header .topmenu .menubox_mb {display: none;}
     #section .business_info02 .info_big01 .info_box, 
     #section .business_info02 .info_big02 .info_box {display: block;  padding:2px ;}
 
 }
 
 @media screen and (max-width:767px) {
-   #header .topmenu .menubox {
-        position: relative; 
-        display: none; }
-        
- #header .topmenu .menubox_mb  {
-    position: absolute;
-    top: 85px;
-    right: 0px;
-    background: rgba(255, 255, 255, 0.8);
-}
-#header .topmenu .menubox_mb .depth1_m > li {
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    border-bottom:1px solid #000 ;
-    
-}
-#header .topmenu .menubox_mb .depth1_m > li {
-    padding:20px ;
-    border-bottom:1px solid #000 ;
-  
-}
+    #header .topmenu .menubox {
+        position:absolute; 
+        top:100%; right:0;  z-index:999;
+        display: none; background:#fff }
 
- #header .topmenu .open_nav{
-     font-size: 25px;
-     display: block; 
-     position: absolute;
-     top: 0px; right: 10px;
-     padding: 25px 10px;
-    }
- #header .topmenu .close_nav{
-     font-size: 25px;
-     display: none;
-     display: block; 
-     position: absolute;
-     top: 0px; right: 10px;
-     padding: 25px 10px;
-}
- #header .topmenu .login_box {
-     float: none; 
-     position: absolute;
-     top: 0px;
-     right: 80px;
-    font-size: 20px; 
-    text-align: center; 
-    padding: 25px 10px;
-}
+    #header .topmenu .menubox .depth1 > li {display: block;
+        padding: 25px 35px;  position: relative; transition: all 0.5s;}
 
+    #header .topmenu .menubox .depth2 {color: #000; padding: 10px 0px; display: none;
+        position: static; top: 100%; left: 0; width: 100%; height:auto; text-align: center;
+        z-index: 9999; background:#ddd }
+
+ #header .topmenu .open_nav{display: block; position:absolute; top:20px; right:20px; }
+ #header .topmenu .close_nav{display: none; position:absolute; top:20px; right:20px;}
+
+ #header .topmenu .login_box {float: right; font-size: 14px; text-align: center; padding: 25px 10px;
+    margin-top:30px; 
+}
+#header .topmenu .login_box a:nth-child(1),
+#header .topmenu .login_box a:nth-child(2),
+#header .topmenu .login_box a:nth-child(3) {padding: 0 5px 0 9px; }
+
+   
 }
