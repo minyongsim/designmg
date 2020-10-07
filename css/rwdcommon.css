@@ -17,9 +17,10 @@
 }
 
 @media screen and (max-width:1024px) {
+  
     #header .topmenu .logo {
         float: left;
-        padding: 10px 15px
+        padding: 10px 50px
     }
 
     #header .topmenu .menubox .depth1>li {
@@ -28,11 +29,74 @@
         position: relative;
         transition: all 0.5s;
     }
+    #header .topmenu .login_box {float: none; font-size: 14px; text-align: center; padding: 0px;
+    position: absolute;  top: 5%; right: 120px;}
 
+    #footer .privacy {
+        background: #f5f5f5;
+        position: relative;
+        text-align: center;
+    }
+
+    #footer .privacy .privacy_dox {
+        padding: 10px 20px;
+        display: inline-block;
+        font-size: 15px;
+        position: static;
+        top: 50%;
+        left: 20%;
+    }
+
+    #footer .company_info {
+        padding: 100px 0;
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    #footer .company_info .company_box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 200px;
+        transform: translateX(-50%);
+    }
+
+    #footer .company_info .company_box .company {
+        position: static;
+        top: 0%;
+        left: 0%;
+    }
+
+    #footer .company_info .company_box .customer {
+        position: static;
+        top: 0%;
+        left: 0%
+    }
+
+    #footer .company_info .company_box .followus {
+        position: static;
+        bottom: 0%;
+        left: 0%;
+        padding: 0px 0;
+    }
+
+    #footer .copy {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px 10px;
+    }
 
 }
 
 @media screen and (max-width:767px) {
+    #header .topmenu .logo {
+        float: left;
+        padding: 10px 10px
+    }
     #header .topmenu .menubox {
         position: absolute;
         top: 100%;
@@ -78,17 +142,92 @@
     }
 
     #header .topmenu .login_box {
-        float: right;
+        float: none;
         font-size: 14px;
         text-align: center;
-        padding: 25px 10px;
-        margin-top: 30px;
+        padding: 25px 0px;
+        margin-top: 0px;
+        position: absolute;  top: 30%; right: 0px;
     }
 
     #header .topmenu .login_box a:nth-child(1),
     #header .topmenu .login_box a:nth-child(2),
     #header .topmenu .login_box a:nth-child(3) {
         padding: 0 5px 0 9px;
+
+    }
+    
+    #footer .privacy {
+        background: #f5f5f5;
+        position: relative;
+    }
+
+    #footer .privacy .privacy_dox {
+        padding: 10px 20px;
+        display: block;
+        font-size: 15px;
+        position: static;
+        top: 50%;
+        left: 20%;
+    }
+
+    #footer .privacy .privacy_dox a {
+        position: relative;
+        padding: 5px;
+        display: block;
+        border: 1px solid #ccc;
+        margin: 5px;
+    }
+
+    #footer .privacy .privacy_dox a:after {
+        content: "|";
+        font-size: 10px;
+        padding: 0 0px;
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        transform: translateY(-50%);
+        display: none;
+    }
+
+
+
+    #footer .company_info .company_box .company h2 {
+        font-size: 15px;
+        padding: 3px 0;
+        padding-top: 5px;
+    }
+
+    #footer .company_info .company_box .company p {
+        line-height: 30px;
+        color: rgb(144, 143, 144);
+        font-size: 13px;
+    }
+
+    #footer .company_info .company_box .customer h2 {
+        font-size: 15px;
+        padding: 3px 0;
+    }
+
+    #footer .company_info .company_box .customer p {
+        line-height: 30px;
+        color: rgb(144, 143, 144);
+        font-size: 12px;
+    }
+
+    #footer .company_info .company_box .followus h2 {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    #footer .company_info .copy {
+        position: absolute;
+        top: 41%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px 10px;
+        font-size: 8px;
+        display: none;
     }
 
 

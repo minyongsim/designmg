@@ -31,4 +31,19 @@ color: #fff; border-radius:2px ;}
 #login_section .info a {padding:0 20px; position: relative;}
 #login_section .info a:before {content: '|'; position: absolute; top: 0; left: 0px;}
 #login_section .info a:first-child:before {display: none;}
-
+ 
+@media screen and (max-width:1166px){
+    
+}
+@media screen and (max-width:1166px){
+    
+}
+@media screen and (max-width:1166px){
+    .extra_service {background-size: cover; background-repeat:no-repeat; 
+        height: 260px; text-align: center; padding: 100px 0; width: 100%;}
+    #login_section input {width: 90%; height: 54px; margin: 10px 0;
+             background:#f8f9fa; padding-left:1em ; border:none ;}
+    #login_section button {width: 50%; height: 54px; background: #3e78ff; margin: 20px 0;
+                color: #fff; border-radius:2px ;}
+    #login_section .info {margin-bottom: 100px; font-size: 10px;}
+}

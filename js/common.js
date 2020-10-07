@@ -1,32 +1,37 @@
 (function ($) {
-    
+
     $(window).load(function () {
         $('.introAni').delay(500).fadeOut(500)
     })
 
     init()
     var flag = true
+
     function init() {
         var ww = $(window).width()
-        if (ww > 767 && flag) {
-            $('.topmenu .menubox').show()
-            $('.open_nav, .close_nav, .depth2').hide()
+        if (ww > 767) {
             $('html').addClass('pc').removeClass('mobile')
-            flag = false
-        } else if (ww < 767 && !flag) {
-            $('.topmenu .open_nav').show()
-            $('.menubox, .depth2,.decobox').hide()
+            if (flag) {
+                $('.topmenu .menubox').show()
+                $('.open_nav, .close_nav, .depth2').hide()
+                flag = false
+            }
+        } else if (ww < 767) {
             $('html').addClass('mobile').removeClass('pc')
-            flag = true
+            if (!flag) {
+                $('.topmenu .open_nav').show()
+                $('.menubox, .depth2,.decobox').hide()
+                flag = true
+            }
         }
     }
-    init()
+
     $(window).resize(function () {
         init()
     })
 
-      // pc 화면 에서 메뉴 호버 했을때 이벤트
-      $('.depth1 > li').hover(
+    // pc 화면 에서 메뉴 호버 했을때 이벤트
+    $('.depth1 > li').hover(
         function () {
             if ($('html').hasClass('pc')) {
                 $('.depth2, .decobox').stop().slideDown(300)
@@ -93,14 +98,14 @@
             flag = true
         }
     });
-  
- // 클릭시 네비 박스 열고 닫기 버튼 나타나기
+
+    // 클릭시 네비 박스 열고 닫기 버튼 나타나기
     $('.topmenu .open_nav').on('click', function () {
         $(this).next().stop().slideDown(300)
         $(this).hide()
         $(this).nextAll('.close_nav').show()
     })
-  
+
 
     // 닫기버튼 클릭시 네비박스 사라지기
     $('.topmenu .close_nav').on('click', function () {
@@ -127,7 +132,7 @@
         if (sct >= biz01) {
             $('.business_info').addClass('on')
         } else if (sct === 0) {
-            $('.business_info').Class('on')
+            $('.business_info').removeClass('on')
         }
         var biz02 = $('.business_info02').offset().top - $(this).height() / 2
         if (sct >= biz02) {
