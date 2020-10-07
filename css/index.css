@@ -1,6 +1,6 @@
 *{outline: none;}
 /* 슬라이드 */
-#section {padding-top: 10px;}
+#section {padding-top: 0px;}
 #section .slide_box { position: relative; width: 100%;}
 #section .slide_box .slide-outer{width: 80%;}
 #section .slide_box .slide_inner .slide {
