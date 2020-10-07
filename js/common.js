@@ -1,7 +1,7 @@
 (function ($) {
 
     $(window).load(function () {
-        $('.introAni').delay(500).fadeOut(500)
+        $('.introAni').delay(1000).fadeOut(1000)
     })
 
     init()
@@ -61,7 +61,7 @@
         $('#simBox').load(url)
     })
 
-    var flag = true;
+    var sflag = true;
     $(window).on('scroll', function () {
         var scollSize = $(document).height() - $('#header').height() - $(window).height();
         var sct = $(this).scrollTop();
@@ -74,7 +74,7 @@
         //     });
 
         // 스크롤탑값에 따라 헤더구역 고정시키기
-        if (sct >= 100 && flag) {
+        if (sct >= 100 && sflag) {
             $('#header').css({
                 position: 'fixed',
                 opacity: '0',
@@ -84,8 +84,8 @@
                 height: '100px',
                 opacity: '1',
             }, 500)
-            flag = false;
-        } else if (sct === 0 && !flag) {
+            sflag = false;
+        } else if (sct === 0 && !sflag) {
             $('#header').css({
                 position: 'relative',
                 height: '0',
@@ -95,7 +95,7 @@
                 height: '100px',
                 backgroundColor: 'rgba(255,255,255,1)'
             }, 500)
-            flag = true
+            sflag = true
         }
     });
 

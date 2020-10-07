@@ -55,6 +55,23 @@
         padding: 2px;
     }
 
+    #section .video .vbox a:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0.5;
+        transform: translate(-50%, -50%);
+    }
+
+    #section .video .close {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        padding: 20px;
+        font-size: 50px;
+        color: oldlace;
+    }
+
 }
 
 @media screen and (max-width:767px) {
@@ -94,4 +111,92 @@
         left: 40%;
         display: none;
     }
+    #section .business_info .business_box li {float: left; width: 50%;  }
+
+    #section .biz_box .biz_inner li { position: relative; text-align:center; margin: 10px auto; }
+
+    #section .biz_box .biz_inner li>a img {
+        transition: all 0.5s;
+        display: none;
+    }
+
+    #section .biz_box .biz_inner li:nth-child(1) {
+        float: none;
+        width: 90%;
+    }
+
+    #section .biz_box .biz_inner li:nth-child(1)>a {
+        display: block;
+        transition: all 0.5s;
+        background: no-repeat;
+        background-size: cover;
+        background-position:center ;
+        height: 200px;
+        line-height: 502px
+    }
+
+    #section .biz_box .biz_inner li:nth-child(1)>a {
+        background-image: url(../images/m01.jpg);
+    }
+
+    #section .biz_box .biz_inner li:nth-child(2) {
+        float: none;;
+        width: 90%;
+        margin-bottom:0
+    }
+
+    #section .biz_box .biz_inner li:nth-child(2)>a {
+        display: block;
+        transition: all 0.5s;
+        background: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        line-height: 200px
+    }
+
+    #section .biz_box .biz_inner li:nth-child(2)>a {
+        background-image: url(../images/m02.jpg);
+    }
+
+    #section .video .vbox a:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0.5;
+        transform: translate(-50%, -50%);
+    }
+
+    #section .biz_box .biz_inner li:nth-child(3) {
+        float: none;
+        width: 90%;
+    }
+
+    #section .biz_box .biz_inner li:nth-child(3)>a {
+        display: block;
+        transition: all 0.5s;
+        background: no-repeat;
+        background-size: cover;
+        height: 200px;
+        line-height: 200px
+    }
+
+    #section .biz_box .biz_inner li:nth-child(3)>a {
+        background-image: url(../images/m03.jpg);
+    }
+    
+
+    #section .video .close {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        padding: 20px;
+        font-size: 50px;
+        color: oldlace;
+    }
+    #section .portfolio {width: 100%; padding-top:30PX; padding-bottom:30px ;}
+    #section .portfolio h1 {text-align: center; ; font-size: 30px; }
+    #section .portfolio .photo_box li img{ width: 33.33%; height: 25%; 
+        border-radius: 10%; border: 1px solid #fff; float: left;
+        padding: 3px; opacity: 0.5;}
 }

@@ -137,7 +137,7 @@ animation: zoomOutmain 4.5s both;
 #section .business_info .business_box {text-align: center;}
 #section .business_info .business_box li {float: left; width: 25%;  }
 
-#section .business_info .business_box li a {display:inline-block; text-align: center; padding: 50px 0px;
+#section .business_info .business_box li a {display: inline-block; text-align: center; padding: 50px 0px;
 font-size: 17px; font-weight: bold;}
 #section .business_info .business_box li img {transition: all 0.5s;}
 #section .business_info .business_box li:hover img {transform: translateY(-10%);}
@@ -201,16 +201,19 @@ font-size: 17px; font-weight: bold;}
 #section .biz_box .biz_inner li > a:hover img { transform: rotate(1turn);}
 
 #section .biz_box .biz_inner li:nth-child(1) {float: left; width:48.8% }
-#section .biz_box .biz_inner li:nth-child(1) > a {display: block; transition:all 0.5s; background: no-repeat ; background-size:cover ; height: 502px; line-height:502px }
+#section .biz_box .biz_inner li:nth-child(1) > a {display: block; transition:all 0.5s;
+     background: no-repeat ; background-size:cover ; height: 502px; line-height:502px }
 #section .biz_box .biz_inner li:nth-child(1) > a { background-image: url(../images/m01.jpg); }
 #section .biz_box .biz_inner li .text { background: #f2f2f2; padding: 20px 10px; }
 
 #section .biz_box .biz_inner li:nth-child(2) {float: right; width: 48.8%;margin-bottom:20px }
-#section .biz_box .biz_inner li:nth-child(2) > a {display: block; transition:all 0.5s; background: no-repeat ; background-size:cover ; background-position:center ;  height: 200px; line-height:200px }
+#section .biz_box .biz_inner li:nth-child(2) > a {display: block; transition:all 0.5s; 
+    background: no-repeat ; background-size:cover ; background-position:center ;  height: 200px; line-height:200px }
 #section .biz_box .biz_inner li:nth-child(2) > a {background-image: url(../images/m02.jpg);}
 
 #section .biz_box .biz_inner li:nth-child(3) {float: right; width: 48.8%; }
-#section .biz_box .biz_inner li:nth-child(3) > a {display: block; transition:all 0.5s; background: no-repeat ; background-size:cover ; height: 200px; line-height:200px }
+#section .biz_box .biz_inner li:nth-child(3) > a {display: block; transition:all 0.5s; 
+    background: no-repeat ; background-size:cover ; height: 200px; line-height:200px }
 #section .biz_box .biz_inner li:nth-child(3) > a {background-image: url(../images/m03.jpg);}
 
 #section .biz_box .biz_inner {overflow: hidden;}
@@ -252,7 +255,7 @@ font-size: 17px; font-weight: bold;}
  #section .portfolio h1 {text-align: center; ; font-size: 40px; position: relative; padding-bottom: 10px;}
  #section .portfolio h1:after {content: ''; width: 40px; height:2px; background: #111; 
     position:absolute ; top: 100%; left: 50%; transform: translate(-50%);}
-#section .portfolio p {text-align: center; padding:30px 0; font-size: 16px;}
+#section .portfolio p {text-align: center; padding:20px 0; font-size: 16px;}
 #section .portfolio .keyword {text-align: center; padding: 30px 0px;}
 #section .portfolio .keyword li 
 {display: inline-block; border: 1px solid #27a4dd; color:#27a4dd; padding: 5px 10px; border-radius: 50px;}
