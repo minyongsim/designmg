@@ -10,7 +10,7 @@
         $('html').css({
             overflowY: status
         })
-        var htmlWidth = $('httml').width()
+        var htmlWidth = $('html').width()
         return htmlWidth
     }
 
@@ -30,7 +30,6 @@
             $('html').addClass('pc').removeClass('mobile')
             $('.topmenu .menubox').show()
             $('.open_nav, .close_nav, .depth2').hide()
-            
         } else if (ww <= deviceSize && !$('html').hasClass('mobile')) {
             $('html').addClass('mobile').removeClass('pc')
             $('.topmenu .open_nav').show()

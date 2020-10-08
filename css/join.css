@@ -1,7 +1,4 @@
 @charset "utf-8";
-@import "reset.css";
-@import "common.css";
-
 
 #join_section .extra_service 
 {background-size: cover; background-repeat:no-repeat; height: 260px; text-align: center; padding: 100px 0;}

@@ -5,8 +5,16 @@
         float: left;
         padding: 10px 20px
     }
-    #header .topmenu .login_box {float: none; font-size: 14px; text-align: center; padding: 10px;
-        position: absolute;  top: 23%; right: 10px;}
+
+    #header .topmenu .login_box {
+        float: none;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        top: 23%;
+        right: 10px;
+    }
 
 }
 
@@ -19,7 +27,7 @@
 }
 
 @media screen and (max-width:1024px) {
-  
+
     #header .topmenu .logo {
         float: left;
         padding: 10px 50px
@@ -31,8 +39,16 @@
         position: relative;
         transition: all 0.5s;
     }
-    #header .topmenu .login_box {float: none; font-size: 14px; text-align: center; padding: 0px;
-    position: absolute;  top: 5%; right: 10%;}
+
+    #header .topmenu .login_box {
+        float: none;
+        font-size: 14px;
+        text-align: center;
+        padding: 0px;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+    }
 
     #footer .privacy {
         background: #f5f5f5;
@@ -85,10 +101,11 @@
     }
 
     #footer .copy {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translateX(-50%);
+        position: static;
+        bottom: none;
+        left: none;
+        text-align: center;
+        transform: translateX(0%);
         padding: 20px 10px;
     }
 
@@ -99,6 +116,7 @@
         float: left;
         padding: 10px 10px
     }
+
     #header .topmenu .menubox {
         position: absolute;
         top: 100%;
@@ -151,7 +169,9 @@
         text-align: center;
         padding: 25px 0px;
         margin-top: 0px;
-        position: absolute;  top: 30%; right: 0px;
+        position: absolute;
+        top: 30%;
+        right: 0px;
     }
 
     #header .topmenu .login_box a:nth-child(1),
@@ -160,7 +180,7 @@
         padding: 0 5px 0 9px;
 
     }
-    
+
     #footer .privacy {
         background: #f5f5f5;
         position: relative;
@@ -197,7 +217,7 @@
 
 
     #footer .company_info .company_box .company h2 {
-        font-size: 15px;
+        font-size: 13px;
         padding: 3px 0;
         padding-top: 5px;
     }
@@ -224,15 +244,14 @@
         padding: 5px;
     }
 
-    #footer .company_info .copy {
-        position: absolute;
-        top: 41%;
-        left: 50%;
-        transform: translateX(-50%);
+    #footer .copy {
+        font-size: 10px;
+        position: static;
+        bottom: none;
+        left: none;
+        text-align: center;
+        transform: translateX(0%);
         padding: 20px 10px;
-        font-size: 8px;
-        display: none;
     }
-
 
 }

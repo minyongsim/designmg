@@ -17,3 +17,12 @@
 .bns_info .bns_outer .bns_inner li:nth-child(2) .bns_text {position: absolute; right: 0; bottom: 12%;}
 
 
+@media screen and (max-width:767px) {
+    .bns_info .bns_outer .bns_inner li img {width: 100% ; border-radius: 10%;}
+    .bns_info .bns_outer .bns_inner li .bns_text {text-align: center; margin:0 auto ;}
+    .bns_info .bns_outer .bns_inner li .bns_text h2:after {content: ''; height: 2px; width:150px; position: absolute; left: 38%; bottom: 0; background: navy; display: none;}
+    .bns_info .bns_outer .bns_inner li .bns_text p {font-size: 15px; padding: 20px 10px; text-align: left;}
+    .bns_info .bns_outer .bns_inner li:nth-child(1) .bns_text {position:static; right: 0; top: 7%;}
+.bns_info .bns_outer .bns_inner li:nth-child(2) {border-top: 1px solid #333;}
+.bns_info .bns_outer .bns_inner li:nth-child(2) .bns_text {position: static; right: 0; bottom: 12%;}
+}
