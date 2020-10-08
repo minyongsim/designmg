@@ -71,7 +71,7 @@
         $('#simcontainer').remove()
         $('#simBox').load(url)
     })
-
+    
     var sflag = true;
     $(window).on('scroll', function () {
         var scollSize = $(document).height() - $('#header').height() - $(window).height();
@@ -126,14 +126,42 @@
         // $('.depth1, .depth2').hide()
         // $('.topmenu .menubox .depth1 > li').removeClass('on')
     })
-
-
-    $('.depth1 > li').on('click', function () {
-        if ($('html').hasClass('mobile')) {
-            $(this).find('.depth2').stop().slideToggle(300)
-            $(this).siblings().find('.depth2').stop().slideUp(300)
+      //pc에서 메뉴1단계 클릭하면 로드 시키기
+    $('.topmenu .depth1 > li > a ').on('click',function(e){
+        e.preventDefault();
+        if ($('html').hasClass('pc')){
+            var url = $(this).attr('href')
+            $('#simcontainer').remove()
+            $('#simBox').load(url)
         }
     })
+      //2단계 메뉴 클릭하면 모든 화면 페이지 로드 시키기
+      $('.topmenu .depth2 > li > a ').on('click',function(e){
+        e.preventDefault();
+        var url = $(this).attr('href')
+              $('#simcontainer').remove()
+              $('#simBox').load(url)
+              if ($('html').hasClass('mobile')){
+              $('.topmenu .open_nav').show()
+              $('.close_nav, .menubox, .depth2,.decobox').hide()
+              }
+      })
+
+   // 모바일 화면 메뉴 슬라이드 이벤트
+   $(".depth1 > li > a").on('click', function () {
+    if ($('html').hasClass('mobile')) {
+      $(this).parent().toggleClass('on')
+      $(this).parent().find('.depth2').stop().slideToggle(300)
+      $(this).parent().siblings().each(function () {
+        if ($(this).css('display') === 'block') {
+          $(this).find('.depth2').slideUp(300)
+          $(this).removeClass('on')
+        }
+      })
+    }
+  })
+
+   
 
 
 
