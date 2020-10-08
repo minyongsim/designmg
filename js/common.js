@@ -4,25 +4,37 @@
         $('.introAni').delay(1000).fadeOut(1000)
     })
 
+
+    var deviceSize = 767;
+    function scrollOX(status) {
+        $('html').css({
+            overflowY: status
+        })
+        var htmlWidth = $('httml').width()
+        return htmlWidth
+    }
+
+    var swh = scrollOX('hidden'),
+        sws = scrollOX('scroll'),
+        swd = swh - sws
+
+    if (swd > 0) {
+        deviceSize = deviceSize - swd
+    }
+
     init()
-    var flag = true
 
     function init() {
         var ww = $(window).width()
-        if (ww > 767) {
+        if (ww > deviceSize && !$('html').hasClass('pc')) {
             $('html').addClass('pc').removeClass('mobile')
-            if (flag) {
-                $('.topmenu .menubox').show()
-                $('.open_nav, .close_nav, .depth2').hide()
-                flag = false
-            }
-        } else if (ww < 767) {
+            $('.topmenu .menubox').show()
+            $('.open_nav, .close_nav, .depth2').hide()
+            
+        } else if (ww <= deviceSize && !$('html').hasClass('mobile')) {
             $('html').addClass('mobile').removeClass('pc')
-            if (!flag) {
-                $('.topmenu .open_nav').show()
-                $('.menubox, .depth2,.decobox').hide()
-                flag = true
-            }
+            $('.topmenu .open_nav').show()
+            $('.menubox, .depth2,.decobox').hide()
         }
     }
 
