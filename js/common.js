@@ -1,7 +1,7 @@
 (function ($) {
 
     $(window).load(function () {
-        $('.introAni').delay(1000).fadeOut(1000)
+        $('.introAni').delay(800).fadeOut(800)
     })
 
 
