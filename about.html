@@ -19,12 +19,3 @@
 
     </div>
 </div>
-<script>
-    $('#simBox').load('abot.html')
-    $('.about_us a').on('click', function (e) {
-        e.preventDefault()
-        var url = $(this).attr('href')
-        $('#simcontainer').remove()
-        $('#simBox').load(url)
-    })
-</script>

@@ -14,7 +14,7 @@ text-overflow: ellipsis;}     */
 .noticeTable {margin-top: 20px;}
 .noticeTable col:nth-child(1){width: 5%; }
 .noticeTable col:nth-child(2){width: auto;}
-.noticeTable col:nth-child(3){width: 13%;}
+.noticeTable col:nth-child(2){width: auto;}
 .noticeTable col:nth-child(4){width: 13%;}
 .noticeTable col:nth-child(5){width: 5%;}
 .noticeTable table {border: none; font-size: 14px;}
@@ -35,10 +35,15 @@ text-overflow: ellipsis;}     */
 .noticePage .numlist a.on{background: #ddd;}
 
 @media screen and (max-width:767px){
+    .noticeTable col:nth-child(1){width: 15%; }
+    .noticeTable col:nth-child(2){width: 40%;}
+    .noticeTable col:nth-child(3){width: 20%;}
     .noticeTable col:nth-child(4){width: 13%; display: none;}
-    .noticeTable col:nth-child(5){width: 5%; display: none;}
+    .noticeTable col:nth-child(5){width: 10%; display: none;}
     .noticeTable tbody th:nth-child(4),
     .noticeTable tbody th:nth-child(5){text-align: center; display: none;}
     .noticeTable tbody td:nth-child(4),
     .noticeTable tbody td:nth-child(5){text-align: center; display: none;}
+  
+
 }

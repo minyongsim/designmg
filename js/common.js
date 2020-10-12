@@ -5,7 +5,7 @@
     })
 
 
-    var deviceSize = 767;
+    var deviceSize = 1024;
     function scrollOX(status) {
         $('html').css({
             overflowY: status
@@ -66,6 +66,13 @@
 
     $('#simBox').load('main.html')
     $('.depth1 > li > .depth2 > li > a').on('click', function (e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#simcontainer').remove()
+        $('#simBox').load(url)
+    })
+    $('#simBox').load('main.html')
+    $('#footer .privacy .privacy_dox > a').on('click', function (e) {
         e.preventDefault()
         var url = $(this).attr('href')
         $('#simcontainer').remove()

@@ -17,7 +17,7 @@
 .bns_info .bns_outer .bns_inner li:nth-child(2) .bns_text {position: absolute; right: 0; bottom: 12%;}
 
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:1024px) {
     .bns_info .bns_outer .bns_inner li img {width: 100% ; border-radius: 10%;}
     .bns_info .bns_outer .bns_inner li .bns_text {text-align: center; margin:0 auto ;}
     .bns_info .bns_outer .bns_inner li .bns_text h2:after {content: ''; height: 2px; width:150px; position: absolute; left: 38%; bottom: 0; background: navy; display: none;}

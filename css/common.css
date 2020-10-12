@@ -15,7 +15,7 @@
 
 #header .topmenu { width: 100%; height: 100px; display: inline-block; position: relative;}
 #header .topmenu .logo {float: left; padding: 5px 100px 10px 20px; }
-#header .topmenu .menubox {float: left; position: relative; }
+#header .topmenu .menubox {float: left; position: relative; margin: 0 auto; }
 #header .topmenu .menubox .depth1 > li {display: inline-block;
     padding: 25px 35px;  position: relative; transition: all 0.5s;}
 #header .topmenu .menubox .depth1 > li > a { font-size: 18px;
@@ -62,7 +62,6 @@ top: 50%; left: -5px; transform: translateY(-50%);}
 
 #footer .company_info .company_box .followus  {position: absolute; bottom:55%; left:80%; padding: 20px 0; }
 #footer .company_info .company_box .followus h2 {font-size: 20px; padding: 20px;}
-
 #footer .copy {position: absolute ; top: 85%; left:21%;}
 
 .introAni {

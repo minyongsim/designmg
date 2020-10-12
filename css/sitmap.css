@@ -18,7 +18,7 @@
     width: calc(100% - 200px);
     text-align: center;
 }
-.sitmapPage .depth1 > li {
+.sitmapPage .depth1s > li {
     float: left;
     height: 200px;
     width: 20%;
@@ -28,9 +28,41 @@
   padding-top:20px ;
 
 }
-.sitmapPage .depth2 > li {
+.sitmapPage .depth2s > li {
     display: block;
     color: #555;
     font-size: 16px;
     padding-top: 10px;
+}
+
+@media screen and (max-width:767px) {
+   
+    .sitmapPage .sitTit {
+        float: none; 
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        color: navy;
+        padding:10px 0;
+        font-weight: bold;
+        text-align: center;
+    } 
+    
+    .sitmapPage .sitList {
+        float: none; 
+        width:100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sitmapPage .depth1s > li {
+        float: none;
+        height: 200px;
+        width: 100%;
+        font-size: 15px;
+        line-height: 1; 
+     border-top:2px solid navy;
+      padding-top:20px ;
+    
+    }
+
 }
