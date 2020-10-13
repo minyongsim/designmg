@@ -63,6 +63,19 @@
          $('.vinner iframe').attr('src','')
      })
      
+     $('.all').show();
+     $('.keyword > li > button').on('click', function () {
+       $(this).addClass('act')
+       $(this).parent().siblings().find('button').removeClass('act')
+       var datac = $(this).attr('data-c')
+       $('.all').css({
+         transform: 'scale(0)'
+       }).stop().hide()
+       $('.' + datac).stop().show(300).css({
+         transform: 'scale(1)'
+       })
+     })
+     
   
 
 })(jQuery)

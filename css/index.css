@@ -250,6 +250,7 @@ font-size: 17px; font-weight: bold;}
  #section .video .vouter {position: fixed; top: 0; left: 0;bottom: 0;right: 0; z-index: 9999999999999999; background-color:rgba(0,0,0,0.5); display: none;}
  #section .video .vinner {position: fixed;top: 20%; left: 20%; bottom: 20%; right: 20%; z-index: 9999999999999;}
  #section .video .close {position: absolute; top: 110px; right: 355px; padding: 20px; font-size: 50px; color: oldlace; z-index: 9999999999999999;}
+ 
  /*포토폴리오*/
  #section .portfolio {width: 100%; padding-top:70PX; padding-bottom:80px ;}
  #section .portfolio h1 {text-align: center; ; font-size: 40px; position: relative; padding-bottom: 10px;}
@@ -257,10 +258,11 @@ font-size: 17px; font-weight: bold;}
     position:absolute ; top: 100%; left: 50%; transform: translate(-50%);}
 #section .portfolio p {text-align: center; padding:20px 0; font-size: 16px;}
 #section .portfolio .keyword {text-align: center; padding: 30px 0px;}
-#section .portfolio .keyword li 
-{display: inline-block; border: 1px solid #27a4dd; color:#27a4dd; padding: 5px 10px; border-radius: 50px;}
+#section .portfolio .keyword li {padding: 3px; display: inline-block; }
+#section .portfolio .keyword li > button{border: 1px solid #27a4dd; 
+color:#27a4dd; padding: 5px 10px; border-radius: 50px; background: none;}
 #section .portfolio .Photo_box  {width: 235px; height: 175px; letter-spacing: 20px;}
-#section .portfolio .keyword li:hover{background: #27a4dd; color: #fff;}
+#section .portfolio .keyword li button:hover{background: #27a4dd; color: #fff;}
 #section .portfolio .photo_box li img{ width: 25%; height: 25%; border-radius: 10%; border: 1px solid #fff; float: left;
 padding: 10px; opacity: 0.5;}
 #section .portfolio .photo_box li:hover img {opacity: 1;}
@@ -331,37 +333,37 @@ padding: 10px; opacity: 0.5;}
     animation: fadeInLeft 1s both;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(2){
-    animation: fadeInLeft 1s both 0.5s;
+    animation: fadeInLeft 1s both 0.1s;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(3){
-    animation: fadeInLeft 1s both 1s ;
+    animation: fadeInLeft 1s both 0.3s ;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(4){
-    animation: fadeInLeft 1s both 1.5s;
+    animation: fadeInLeft 1s both 0.4s;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(5){
-    animation: fadeInRight 1s both 2s;
+    animation: fadeInRight 1s both 0.5s;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(6){
-    animation: fadeInRight 1s both 2.5s;
+    animation: fadeInRight 1s both 0.6s;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(7){
-    animation: fadeInRight 1s both 3s;
+    animation: fadeInRight 1s both 0.7s;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(8){
-    animation: fadeInRight 1s both 3.5s;
+    animation: fadeInRight 1s both 0.8s;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(9){
-    animation: fadeInLeft 1s both 4s;
+    animation: fadeInLeft 1s both 0.9s;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(10){
-    animation: fadeInLeft 1s both 4.5s;
+    animation: fadeInLeft 1s both 1s;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(11){
-    animation: fadeInLeft 1s both 5s;
+    animation: fadeInLeft 1s both 1.1s;
 }
 #section .portfolio.on .photo_box .photo li:nth-child(12){
-    animation: fadeInLeft 1s both 5.5s;
+    animation: fadeInLeft 1s both 1.2s;
 }
 
 
