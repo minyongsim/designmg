@@ -1,7 +1,6 @@
 @charset "utf-8";
-
-.noticePage { padding:136px 0px }
-.noticePage h2 { text-align:center; font-size:50px; margin:50px 0px 20px }
+.qnaPage { padding:136px 0px }
+.qnaPage .qnaBox > h2 { text-align:center; font-size:50px; margin:50px 0px 20px }
 .sbox { text-align:center }
 .sbox select { height:30px; vertical-align:middle }
 .sbox input[type=text] { height:30px; width:300px; text-indent:1em; 
@@ -9,41 +8,58 @@
 .sbox input[type=submit] { height:30px; background:#ddd; 
     padding:0 8px; border-radius:5px; vertical-align:middle  }
 
-/* .noticeTable td {white-space:nowrap ; overflow: hidden;
-text-overflow: ellipsis;}     */
-.noticeTable {margin-top: 20px;}
-.noticeTable col:nth-child(1){width: 5%; }
-.noticeTable col:nth-child(2){width: auto;}
-.noticeTable col:nth-child(2){width: auto;}
-.noticeTable col:nth-child(4){width: 13%;}
-.noticeTable col:nth-child(5){width: 5%;}
-.noticeTable table {border: none; font-size: 14px;}
-.noticeTable th,
-.noticeTable td {border-top:1px solid #ddd; 
-    border-bottom:1px solid #ddd; padding: 10px 5px;}
-.noticeTable tbody td:nth-child(1),
-.noticeTable tbody td:nth-child(3),
-.noticeTable tbody td:nth-child(4),
-.noticeTable tbody td:nth-child(5){text-align: center;}
-.noticeTable th {background: #f2f2f2; border-top:1px solid #999;}
-.noticeTable tbody tr:hover{background: #f2f2f2;}
-/*게시판 페이지 번호*/
-.noticePage .numlist {text-align: center; margin: 20px; font-size: 16px;}
-.noticePage .numlist span {background: #ddd; padding: 5px 8px; display: inline-block;}
-.noticePage .numlist a {border: 1px solid #ddd;padding: 5px 8px;}
-.noticePage .numlist a:hover{background: #ddd;}
-.noticePage .numlist a.on{background: #ddd;}
+.qnaform {margin-top:30px;}
 
-@media screen and (max-width:767px){
-    .noticeTable col:nth-child(1){width: 15%; }
-    .noticeTable col:nth-child(2){width: 40%;}
-    .noticeTable col:nth-child(3){width: 20%;}
-    .noticeTable col:nth-child(4){width: 13%; display: none;}
-    .noticeTable col:nth-child(5){width: 10%; display: none;}
-    .noticeTable tbody th:nth-child(4),
-    .noticeTable tbody th:nth-child(5){text-align: center; display: none;}
-    .noticeTable tbody td:nth-child(4),
-    .noticeTable tbody td:nth-child(5){text-align: center; display: none;}
+.qnaform .qn {
+    width: 100%;
+    margin:10px;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding: 20px;
+}
+.qnaform .qn > a:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.qnaform .qnatext {
+    margin-top: 20px;
+}
+.qnaform .qnatext > a {padding-right: 5px; position: relative;}
+.qnaform .qnatext > a::before{
+    content: "|"; font-size: 10px; position: absolute; top: 50%; left: -6px; transform: translateY(-50%);}
+.qnaform .qnatext > a:first-child:before {display: none;}
+
+.qnanum  {text-align: center;  padding-top: 30px;}
+.qnanum a {padding: 10px; border: 1px solid #ddd;} 
+
+
+@media screen and (max-width:400px){
+    .sbox select { height:30px; vertical-align:none; width: 300px; margin-bottom:10px ; }
+    .sbox input[type=text] { height:30px; width:300px; text-indent:1em; 
+        vertical-align:none;  border: 1px solid gray; margin-bottom: 10px;}
+    .sbox input[type=submit] { height:30px; width: 300px; background:#ddd; 
+            padding:0 8px; border-radius:5px; vertical-align:middle  }
+    .qnaform .qnatext a {
+                display: block;
+    }
+     
+    .qnaform .qnatext > a::before{
+                content: "|"; font-size: 10px;
+                 position: absolute; top: 50%; 
+                 left: -6px; transform: translateY(-50%);
+                display: none;}
+
+
+
+    .qnanum a:nth-child(2),
+    .qnanum a:nth-child(3),
+    .qnanum a:nth-child(4),
+    .qnanum a:nth-child(5),
+    .qnanum a:nth-child(6){display: none;}
+           
+        
+
   
 
 }
