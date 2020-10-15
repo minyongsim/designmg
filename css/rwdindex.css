@@ -43,8 +43,9 @@
         width: 100%;
         padding: 30px 0;
     }
-      /*동그라미 재생버튼*/
-      .slide-outer .plpa {
+
+    /*동그라미 재생버튼*/
+    .slide-outer .plpa {
         font-size: 15px;
         color: #fff;
         background: none;
@@ -116,9 +117,17 @@
         left: 40%;
         display: none;
     }
-    #section .business_info .business_box li {float: left; width: 50%;  }
 
-    #section .biz_box .biz_inner li { position: relative; text-align:center; margin: 10px auto; }
+    #section .business_info .business_box li {
+        float: left;
+        width: 50%;
+    }
+
+    #section .biz_box .biz_inner li {
+        position: relative;
+        text-align: center;
+        margin: 10px auto;
+    }
 
     #section .biz_box .biz_inner li>a img {
         transition: all 0.5s;
@@ -135,7 +144,7 @@
         transition: all 0.5s;
         background: no-repeat;
         background-size: cover;
-        background-position:center ;
+        background-position: center;
         height: 200px;
         line-height: 502px
     }
@@ -145,9 +154,10 @@
     }
 
     #section .biz_box .biz_inner li:nth-child(2) {
-        float: none;;
+        float: none;
+        ;
         width: 90%;
-        margin-bottom:0
+        margin-bottom: 0
     }
 
     #section .biz_box .biz_inner li:nth-child(2)>a {
@@ -189,7 +199,26 @@
     #section .biz_box .biz_inner li:nth-child(3)>a {
         background-image: url(../images/m03.jpg);
     }
-    
+
+    #section .video .vouter {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 9999999999999999;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    #section .video .vinner {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        bottom: 10%;
+        right: 10%;
+        z-index: 9999999999999;
+    }
 
     #section .video .close {
         position: absolute;
@@ -199,9 +228,26 @@
         font-size: 50px;
         color: oldlace;
     }
-    #section .portfolio {width: 100%; padding-top:30PX; padding-bottom:30px ;}
-    #section .portfolio h1 {text-align: center; ; font-size: 30px; }
-    #section .portfolio .photo_box li img{ width: 33.33%; height: 25%; 
-        border-radius: 10%; border: 1px solid #fff; float: left;
-        padding: 3px; opacity: 0.5;}
+
+    #section .portfolio {
+        width: 100%;
+        padding-top: 30PX;
+        padding-bottom: 30px;
+    }
+
+    #section .portfolio h1 {
+        text-align: center;
+        ;
+        font-size: 30px;
+    }
+
+    #section .portfolio .photo_box li img {
+        width: 33.33%;
+        height: 25%;
+        border-radius: 10%;
+        border: 1px solid #fff;
+        float: left;
+        padding: 3px;
+        opacity: 0.5;
+    }
 }

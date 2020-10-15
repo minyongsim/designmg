@@ -247,8 +247,8 @@ font-size: 17px; font-weight: bold;}
  #section .video .vbox a:first-child > img {width: 100%;}
  #section .video .vbox a:nth-child(2) {position: absolute; top: 50%; left: 48%; opacity: 0.5; }
  #section .video .vbox a:nth-child(2):hover {opacity: 1;}
- #section .video .vouter {position: fixed; top: 0; left: 0;bottom: 0;right: 0; z-index: 9999999999999999; background-color:rgba(0,0,0,0.5); display: none;}
- #section .video .vinner {position: fixed;top: 20%; left: 20%; bottom: 20%; right: 20%; z-index: 9999999999999;}
+ #section .video .vouter {position: fixed; width: 100%; height: 100%; padding-top: 56.25%;  top: 0; left: 0; z-index: 9999999999999999; background-color:rgba(0,0,0,0.5); display: none;}
+ #section .video .vinner {position: absolute; top: 20%; left: 20%; bottom: 20%; right: 20%; z-index: 9999999999999;}
  #section .video .close {position: absolute; top: 110px; right: 355px; padding: 20px; font-size: 50px; color: oldlace; z-index: 9999999999999999;}
  
  /*포토폴리오*/
