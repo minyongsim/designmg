@@ -34,12 +34,19 @@
 .qnanum a {padding: 10px; border: 1px solid #ddd;} 
 
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
     .sbox select { height:30px; vertical-align:none; width: 300px; margin-bottom:10px ; }
     .sbox input[type=text] { height:30px; width:300px; text-indent:1em; 
         vertical-align:none;  border: 1px solid gray; margin-bottom: 10px;}
     .sbox input[type=submit] { height:30px; width: 300px; background:#ddd; 
             padding:0 8px; border-radius:5px; vertical-align:middle  }
+            .qnaform .qn {
+                width: 90%;
+                margin:10px;
+                border-top:1px solid #ddd;
+                border-bottom:1px solid #ddd;
+                padding: 20px;
+            }
     .qnaform .qnatext a {
                 display: block;
     }
