@@ -222,8 +222,8 @@
 
     #section .video .close {
         position: absolute;
-        top: 10%;
-        right: 10%;
+        top: 0%;
+        right: 0%;
         padding: 20px;
         font-size: 50px;
         color: oldlace;
