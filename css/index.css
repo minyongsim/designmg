@@ -546,6 +546,7 @@
     padding: 30px 0px;
 }
 
+
 #section .portfolio .keyword li {
     padding: 3px;
     display: inline-block;
@@ -558,6 +559,8 @@
     border-radius: 50px;
     background: none;
 }
+#section .portfolio .keyword li>button.act{background: #27a4dd;
+color: #fff;}
 
 #section .portfolio .Photo_box {
     width: 235px;

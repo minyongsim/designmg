@@ -97,7 +97,7 @@
                 position: 'fixed',
                 opacity: '0',
                 height: '0px',
-                backgroundColor: 'rgba(255,255,255,0.9)'
+                backgroundColor: 'rgba(255,255,255,1)'
             }).stop().animate({
                 height: '100px',
                 opacity: '1',
